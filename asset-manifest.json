@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Anket08042003/react_IP/static/css/main.7e4ac282.css",
+    "main.js": "/Anket08042003/react_IP/static/js/main.d5c9acd1.js",
+    "static/media/profile.jpg": "/Anket08042003/react_IP/static/media/profile.2937818dd35310a5d5ec.jpg",
+    "index.html": "/Anket08042003/react_IP/index.html",
+    "main.7e4ac282.css.map": "/Anket08042003/react_IP/static/css/main.7e4ac282.css.map",
+    "main.d5c9acd1.js.map": "/Anket08042003/react_IP/static/js/main.d5c9acd1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e4ac282.css",
+    "static/js/main.d5c9acd1.js"
+  ]
+}
