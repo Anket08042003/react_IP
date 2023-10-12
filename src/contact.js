@@ -1,10 +1,11 @@
 import React from 'react';
 
-const ContactPage = () => {
+const ContactPage = ({college,vesId}) => {
   return (
     <div>
       <p>
-        You can contact me at: 2021.anket.kadam@ves.ac.in
+        My College:{college}<br/>
+        You can contact me at: {vesId}
       </p>
     </div>
   );
