@@ -62,5 +62,46 @@ img {
 .btn:hover{
   box-shadow: aqua;
 }
+ul {
+  list-style-type: none;
+  margin-left: 14px;
+  padding: 0;
+  color:black;
+}
+li {
+  display: inline;
+  float: right;
+  color:black;
+}
+a {
+  display: block;
+  padding: 8px;
+  color:black;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ADEFD1FF;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #00203FFF;
+}
 
 

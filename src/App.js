@@ -1,8 +1,20 @@
 import img from './images/profile.jpg'
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import "./profile.css";
+import ContactPage from './contact'
+import { useState } from 'react';
+import Navbar from './Navbar'
 
 function App() {
+  const [showContact, setShowContact] = useState(false);
+
+  const openContactPage = () => {
+    setShowContact(true);
+  };
+
   return (
+    <Router>
+     <Navbar/> 
     <div className="container">
       <h1 style={{color:'#00203FFF'}}>Anket Kadam</h1>
       <h2 style={{color:'#00203FFF'}}>Backend Devloper</h2>
@@ -17,10 +29,14 @@ function App() {
             Science. Eager to contribute to innovative tech projects. Let's
             connect and create!
       </p>
-      <a className='btn'>
-        get in touch!
-      </a>
+      <Routes>
+          <Route path="/contact" element={<ContactPage />} /> 
+        </Routes>
+        <Link className='btn' onClick={openContactPage}>Get in touch!</Link>
+        {showContact && <ContactPage />}
+        
     </div>
+    </Router>
   );
 }
 
