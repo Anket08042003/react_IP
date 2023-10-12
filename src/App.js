@@ -4,7 +4,7 @@ import "./profile.css";
 import ContactPage from "./contact";
 import { useState } from "react";
 import Navbar from "./Navbar";
-import AchievmentCard from "./AchievmentCard";
+import AchievementCard from "./AchievementCard";
 
 function App() {
   const [showContact, setShowContact] = useState(false);
@@ -40,18 +40,16 @@ function App() {
         <Link to="/contact" className="btn" onClick={openContactPage}>
           Get in touch!
         </Link>
-        {showContact && (<><ContactPage college="VESIT" vesId="2021.anket.kadam@ves.ac.in" />
-          <div className="contact-list">
-          {Achievments.map((Achievment) => (
-            <AchievmentCard
-              key={Achievment.id}
-              Price={Achievment.Price}
-              
-            />
-          ))}
-        </div></>
+        {showContact && (
+          <>
+            <ContactPage college="VESIT" vesId="2021.anket.kadam@ves.ac.in" />
+            <div className="contact-list">
+              {Achievments.map((Achievment) => (
+                <AchievementCard key={Achievment.id} Price={Achievment.Price} />
+              ))}
+            </div>
+          </>
         )}
-        
       </div>
     </Router>
   );
