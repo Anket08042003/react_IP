@@ -9,11 +9,14 @@ const DisplayComponent = () => {
   };
 
   return (
-    <div className='display'>
+    <div className='displayOut'>
+      <div className='display'>
       <h2>Display Component</h2>
       <p>name: {inputData.name}</p>
       <p>email: {inputData.email}</p>
     </div>
+    </div>
+    
   );
 };
 

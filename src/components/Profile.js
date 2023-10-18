@@ -1,7 +1,7 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
 import img from "../images/profile.jpg";
-import '../profile.css';
+import '../styles/style.css';
 
 const Profile = () => {
   return (

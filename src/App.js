@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Profile from './components/Profile';
 import Contact from './components/Contact';
 import DisplayComponent from './components/Display'; // Corrected import
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/display/:inputValue/:inputValue2" element={<DisplayComponent />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );
